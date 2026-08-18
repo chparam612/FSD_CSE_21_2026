@@ -1,0 +1,25 @@
+FSD
+
+What is script in JavaScript?
+  - -script mtlb embedded language jo khud se run nhi ho skta.
+  - a set of plain-text instructions that are executed directly by a runtime environment (like a web browser or Node.js) without needing to be compiled first into a separate executable file.
+
+What is document?
+  -In JavaScript, document is a built-in global object that represents the web page currently loaded in the browser. 
+
+Why use alert?
+  -The creation and survival of alert() comes down to its historic purpose: it was designed to be an intentional, unmissable emergency brake for the user and developer. 
+  -The reason alert has "preference" over other code execution or user actions is due to its design as a synchronous, blocking modal dialog. 
+   -When a browser encounters an alert(), it prioritizes it over everything else by freezing the execution environment. 
+  --to show warningand uses async await to stop the execution of whole program and takes priority.
+  --it is posssible because JS is a single threaded language.
+
+What does log signifies?
+  – log ka mtlb h logger
+  --In console.log(), the word log is a programming method that represents a chronological record of events or data, 
+  -Technically, log is a method (a built-in function) belonging to the global console object provided by the browser or Node.js environment. 
+  -Developers use console.log() primarily for visibility. Because JavaScript runs silently behind the scenes inside the browser, you cannot naturally "see" what the code is doing. console.log() acts as an X-ray machine 
+  -Historically, developers used alert() to see what their code was doing. console.log() was introduced to solve all of alert()'s massive flaws, making it absolutely necessary for modern programming 
+
+document.getElementById("ad").innerHTML = "abes college";
+
