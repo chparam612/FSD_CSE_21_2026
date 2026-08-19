@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <style>
+        .box{
+            height:300px;
+            width:500px;
+            background-color: antiquewhite;
+            color:brown;
+            text-align:center;
+            margin:100px;
+            border-radius: 15px;
+            padding:20px;
+        }
+        .item{
+            margin:10px;
+            height:25px;
+            width: 250px;
+            background-color: white;
+            border-radius: 25px;
+            text-align:center;
+            padding-top: 5px;
+
+        }
+        #head{
+            color:black;
+        }
+        .cart{
+            display:none;
+            width:300px;
+            height:350px;
+            background-color:antiquewhite;
+            text-align:center;
+            margin:10px;
+            padding:10px;
+            color:brown;
+           
+
+        }
+        .cart img {
+         width: 80px;
+         height: 55px;
+         object-fit: cover;
+         border-radius: 25px;
+         margin-bottom: 15px;
+     }
+
+    .amount {
+       font-size: 18px;
+       line-height: 1.8;
+       font-weight: bold;
+    }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+        <h1 id="head">Online Shop</h1>
+
+        <div class="item">Tea : 10</div>
+        <div class="item">Coffee : 60</div>
+        <div class="item">Chilli Potato : 80</div>
+        <div class="item">French Fries : 100</div>
+
+        <button onclick="input()">Buy Now</button>
+        
+    </div>
+
+    <div class="cart" >
+        <img id="productImage" src="" alt="Product">
+        <div class="amount">
+            Please pay : 
+        </div>
+    </div>
+    
+    <script>
+        let price=0;
+        let img="";
+        
+       function input(){
+        let Product = prompt("Enter the product name: ");
+        let quantity = Number(prompt("Enter required quantity: "));
+       
+        if (quantity <= 0 || isNaN(quantity)) {
+                alert("Please enter a valid quantity");
+               return;
+            }
+
+       switch (Product.toLowerCase()) {
+
+    case "tea":
+        price = 10;
+        image = "tea.jpg";
+        Product = "Tea";
+        break;
+
+    case "coffee":
+        price = 60;
+        image = "coffee.png";
+        Product = "Coffee";
+        break;
+
+    case "chilli potato":
+        price = 80;
+        image = "chilli.png";
+        Product = "Chilli Potato";
+        break;
+
+    case "french fries":
+        price = 100;
+        image = "french.png";
+        Product = "French Fries";
+        break;
+
+    default:
+        alert("Invalid product name");
+        return;
+}
+        let total = price * quantity;
+
+        document.querySelector(".cart").style.display = "block";
+
+    document.querySelector(".amount").innerHTML =
+        "Product: " + Product +
+        "<br>Quantity: " + quantity +
+        "<br>Price: ₹" + price +
+        "<br>Total Amount: ₹" + total;
+      
+     document.querySelector("#productImage").src = image;
+
+
+   
+    
+    alert("You have purchased : "+ Product +" quantity " + quantity + " so your total amount: "+(price*quantity));
+
+    }
+
+    </script>
+    
+</body>
+</html>
