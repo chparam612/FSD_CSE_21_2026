@@ -23,3 +23,7 @@ What does log signifies?
 
 document.getElementById("ad").innerHTML = "abes college";
 
+Difference between foreach and map?
+  - foreach loop only picks an element but does not perform any operation While the map picks elements as well as perform some operation on each element 
+  - map does not make changes in the same arr but it duplicates that array and provide that original array remains unchanged
+
