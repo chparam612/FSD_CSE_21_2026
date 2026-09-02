@@ -1,0 +1,82 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:darksalmon;
+}
+
+.container{
+ height:700px;
+ width:700px;
+ margin:auto;
+ border: 4px black solid;
+ background-color:floralwhite;
+}
+
+.busimg img{
+    height:125px;
+    width:125px;
+    border-radius:50%;
+    margin:10px;
+    margin-right:40px;
+    margin-left:100px;
+}
+
+h1{
+    text-align:center;
+
+}
+.head {
+ display:flex;
+ flex-wrap: wrap;
+ line-height:75px;
+ text-align:center;
+ 
+}
+
+.user{
+background-color:brown;
+color:white;
+font-weight:bolder;
+}
+
+.info{
+ height:50px;
+ width:90%;
+ border: 2px solid black;
+ margin-left:40px;
+ text-align:center;
+ line-height:50px;
+ margin-bottom:10px;
+}
+
+.user_main{
+    text-align:center;
+  
+}
+
+.bus_main{
+ text-align:center;
+
+}
+
+.bus{
+background-color:brown;
+color:white;
+font-weight:bolder;
+}
+
+.buy{
+  text-align:center;
+  margin:20px;
+}
+
+.buy button{
+    background-color:greenyellow;
+color:brown;
+font-weight:bold;
+border-radius:20px;
+}
+
+.output{
+    display:none;
+}

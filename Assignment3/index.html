@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="head">
+             <div class="busimg"><img src="Assets/bus_img.jpg" alt="BusLogo"></div>
+             <div class="head"><h1>BUS BOOKING SYSTEM</h1></div>
+        </div>
+
+        <div class="user info">
+           USER INFORMATION
+        </div>
+
+        <div class="user_main">
+
+            <FORM>
+                
+              <label for="username">User Name:</label> &nbsp;
+              <input type="text" id="username" >
+              <br><br>
+
+              <label for="age">User Age:</label> &nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="number" id="age">
+              <br><br>
+
+              <label for="aadhar">User AADHAR NO.:</label> &nbsp;&nbsp;&nbsp;
+              <input type="text" id="aadhar">
+              <br><br>
+
+              <label for="city">SELECT YOUR CITY :</label> &nbsp;
+              <select name="" id="city">
+                <option value="mathura"> Mathura </option>
+                <option value="kanpur"> Kanpur </option>
+                <option value="prayagraj"> Prayagraj </option>
+                <option value="dadri"> Dadri </option>
+                <option value="jhansi">Jhansi </option>
+              </select>
+              <br><br>
+
+              <label for="date">Journey Date</label> &nbsp;&nbsp;
+              <input type="date" id="date">
+              <br><br>
+
+            </FORM>
+
+        </div>
+        
+        <div class="bus info">
+            BUS INFORMATION
+        </div>
+
+            
+        <div class="bus_main">
+
+              <input type="radio" id="op1" class="type">
+            <label for="op1"> AC BUS 2000</label>
+            <br><br>
+
+            <input type="radio" id="op2" class="type">
+            <label for="op2"> NON AC BUS 1500</label>
+            <br><br>
+
+            <label for="street">SELECT YOUR STREET</label>
+            <select name="Street" id="street">
+                <option value="">GT ROAD</option>
+                <option value="">LT ROAD</option>
+                <option value="">RAF ROAD</option>
+                <option value="">PAC ROAD</option>
+            </select>
+        </div>
+
+        <div class="buy">
+            <button>BUY NOW</button>
+        </div>
+    </div>
+
+
+    <div class="output">
+   <p>Main output hu</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
